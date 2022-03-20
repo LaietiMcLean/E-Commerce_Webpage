@@ -63,7 +63,6 @@ img {
 
 
 /****** Utilidades ******/
-
 .text-center {
     text-align: center;
 }
@@ -147,7 +146,6 @@ img {
 }
 
 /****** Listado de productos ******/
-
 .contenido-principal {
     padding-top: 5rem;
 }
@@ -234,3 +232,28 @@ img {
     background-color: rgb(90, 16, 50);
 }
 
+/****** Site-Footer ******/
+.site-footer {
+    border-top: .1rem solid rgb(199, 196, 196);
+    margin-top: 5rem;
+    padding-top: 3rem;
+}
+
+.site-footer h3 {
+    margin-bottom: 1rem;;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-menu a {
+    display: block;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+}
