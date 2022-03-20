@@ -4,108 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eCommerce Project</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/normalize.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,800&family=Playfair+Display:wght@500;900&display=swap" rel="stylesheet">
+
+    <title>eCommerce - Home</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Título</h1>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galería</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
 
-    <section>
+    <div class="hero"></div>
+
+    <section class="contenedor categorias">
         <h2>Categorías de productos</h2>
-        <div>
-            <img src="./assets/ImagenesEcommerce/categoria1.jpg" alt="Imagen-Categoría"/>
-            <a href="#">Oficina</a>
+
+        <div class="listado-categorias">
+            <div class="categoria">
+                <img src="./assets/ImagenesEcommerce/categoria1.jpg" alt="Imagen-Categoría"/>
+                <a href="#">Oficina</a>
+            </div>
+            <div class="categoria">
+                <img src="./assets/ImagenesEcommerce/categoria2.jpg" alt="Imagen-Categoría"/>
+                <a href="#">Hogar</a>
+            </div>
+            <div class="categoria">
+                <img src="./assets/ImagenesEcommerce/categoria3.jpg" alt="Imagen-Categoría"/>
+                <a href="#">Cocina</a>
+            </div>
         </div>
-        <div>
-            <img src="./assets/ImagenesEcommerce/categoria2.jpg" alt="Imagen-Categoría"/>
-            <a href="#">Hogar</a>
-        </div>
-        <div>
-            <img src="./assets/ImagenesEcommerce/categoria3.jpg" alt="Imagen-Categoría"/>
-            <a href="#">Cocina</a>
+
+    </section>
+
+    <section class="sobre-nosotros">
+        <div class="contenedor sobre-nosotros-grid">
+            <div class="texto-nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rem libero iusto quaerat possimus facilis placeat et unde voluptatum reiciendis dicta suscipit, dolores magni deserunt inventore modi fuga iste commodi?</p>
+            </div>
         </div>
     </section>
 
-    <section>
-        <h2>Sobre Nosotros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rem libero iusto quaerat possimus facilis placeat et unde voluptatum reiciendis dicta suscipit, dolores magni deserunt inventore modi fuga iste commodi?</p>
-    </section>
 
-
-    <main>
-        <h2>Nuestros Productos</h2>
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Nuestros Productos</h2>
         <!--Listado de todos los productos-->
-        <div>  <!--Wrapper de productos-->
+        <div class="listado-productos">  <!--Wrapper de productos-->
 
-            <div> <!--Producto-->
+            <div class="producto"> <!--Producto-->
                 <img src="assets/ImagenesEcommerce/producto1.jpg" alt="Producto-1"/>
-                    <div> <!--Información de producto-->
+                    <div class="texto-producto"> <!--Información de producto-->
                         <h3>Producto 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, culpa, minima libero itaque aspernatur id dicta odit accusamus corrupti aperiam similique beatae velit vero incidunt, ipsam maiores explicabo quam assumenda.</p>
-                        <p>$100.000</p>
-                        <a href="#">Agregar al carrito</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="precio">$100.000</p>
+                        <a class="btn" href="#">Agregar al carrito</a>
                     </div> <!--Información de producto-->
             </div> <!--Producto-->
 
-            <div> <!--Producto-->
+            <div class="producto"> <!--Producto-->
                 <img src="assets/ImagenesEcommerce/producto2.jpg" alt="Producto-2"/>
-                    <div> <!--Información de producto-->
+                    <div class="texto-producto"> <!--Información de producto-->
                         <h3>Producto 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, culpa, minima libero itaque aspernatur id dicta odit accusamus corrupti aperiam similique beatae velit vero incidunt, ipsam maiores explicabo quam assumenda.</p>
-                        <p>$100.000</p>
-                        <a href="#">Agregar al carrito</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="precio">$100.000</p>
+                        <a class="btn" href="#">Agregar al carrito</a>
                     </div> <!--Información de producto-->
             </div> <!--Producto-->
 
-            <div> <!--Producto-->
+            <div class="producto"> <!--Producto-->
                 <img src="assets/ImagenesEcommerce/producto3.jpg" alt="Producto-3"/>
-                    <div> <!--Información de producto-->
+                    <div class="texto-producto"> <!--Información de producto-->
                         <h3>Producto 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, culpa, minima libero itaque aspernatur id dicta odit accusamus corrupti aperiam similique beatae velit vero incidunt, ipsam maiores explicabo quam assumenda.</p>
-                        <p>$100.000</p>
-                        <a href="#">Agregar al carrito</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="precio">$100.000</p>
+                        <a class="btn" href="#">Agregar al carrito</a>
                     </div> <!--Información de producto-->
             </div> <!--Producto-->
 
-            <div> <!--Producto-->
+            <div class="producto"> <!--Producto-->
                 <img src="assets/ImagenesEcommerce/producto4.jpg" alt="Producto-4"/>
-                    <div> <!--Información de producto-->
+                    <div class="texto-producto"> <!--Información de producto-->
                         <h3>Producto 4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, culpa, minima libero itaque aspernatur id dicta odit accusamus corrupti aperiam similique beatae velit vero incidunt, ipsam maiores explicabo quam assumenda.</p>
-                        <p>$100.000</p>
-                        <a href="#">Agregar al carrito</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="precio">$100.000</p>
+                        <a class="btn" href="#">Agregar al carrito</a>
                     </div> <!--Información de producto-->
             </div> <!--Producto-->
 
-            <div> <!--Producto-->
+            <div class="producto"> <!--Producto-->
                 <img src="assets/ImagenesEcommerce/producto5.jpg" alt="Producto-5"/>
-                    <div> <!--Información de producto-->
+                    <div class="texto-producto"> <!--Información de producto-->
                         <h3>Producto 5</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, culpa, minima libero itaque aspernatur id dicta odit accusamus corrupti aperiam similique beatae velit vero incidunt, ipsam maiores explicabo quam assumenda.</p>
-                        <p>$100.000</p>
-                        <a href="#">Agregar al carrito</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="precio">$100.000</p>
+                        <a class="btn" href="#">Agregar al carrito</a>
                     </div> <!--Información de producto-->
             </div> <!--Producto-->
 
-            <div> <!--Producto-->
+            <div class="producto"> <!--Producto-->
                 <img src="assets/ImagenesEcommerce/producto6.jpg" alt="Producto-6"/>
-                    <div> <!--Información de producto-->
+                    <div class="texto-producto"> <!--Información de producto-->
                         <h3>Producto 6</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, culpa, minima libero itaque aspernatur id dicta odit accusamus corrupti aperiam similique beatae velit vero incidunt, ipsam maiores explicabo quam assumenda.</p>
-                        <p>$100.000</p>
-                        <a href="#">Agregar al carrito</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="precio">$100.000</p>
+                        <a class="btn" href="#">Agregar al carrito</a>
                     </div> <!--Información de producto-->
             </div> <!--Producto-->
 
