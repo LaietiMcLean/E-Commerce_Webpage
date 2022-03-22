@@ -49,6 +49,7 @@ img {
 
 .btn {
     background-color: rgb(128, 21, 71);
+    border: none;
     color: white;
     display: block;
     font-weight: 900;
@@ -60,6 +61,7 @@ img {
 
 .btn:hover {
     background-color: rgb(90, 16, 50);
+    cursor: pointer;
 }
 
 
@@ -326,4 +328,43 @@ img {
     height: 40rem;
     width: 40rem;
     object-fit: cover;
+}
+
+/****** Formulario ******/
+.formulario {
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.formulario fieldset {
+    border: .1rem solid rgb(199, 196, 196);
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: rgb(128, 21, 71);
+    color: white;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+.campo select,
+.campo textarea {
+    flex: 1;
+    border: .1rem solid rgb(199, 196, 196);
+    padding: 1rem;
 }
