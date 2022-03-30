@@ -118,6 +118,7 @@ img {
     .nav-principal {
         justify-content: space-between;
         flex-direction: row;
+        margin: 2rem;
     }    
 }
 
@@ -346,6 +347,7 @@ img {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        margin: 2rem;
     }
 }
 
